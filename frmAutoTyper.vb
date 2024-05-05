@@ -37,15 +37,6 @@ Public Class frmAutoTyper
         End If
     End Sub
 
-    ' Private Sub frmAutoTyper_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
-    ' This does not work I do not know why
-    ' If e.KeyCode = Keys.S Then
-    ' StartTyping()
-    ' Else'If e.KeyCode = Keys.Q Then
-    ' StopTyping()
-    ' End If
-    ' End Sub
-
     Private Sub StartTyping()
         Dim interval As Integer = CalculateInterval()
         ' Checking for #1

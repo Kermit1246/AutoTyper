@@ -32,8 +32,6 @@ Partial Class frmAutoTyper
         Me.txtMins = New System.Windows.Forms.TextBox()
         Me.txtMilli = New System.Windows.Forms.TextBox()
         Me.txtSecs = New System.Windows.Forms.TextBox()
-        Me.btnHotkey = New System.Windows.Forms.Button()
-        Me.btnRecord = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.nudRepeat = New System.Windows.Forms.NumericUpDown()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -52,7 +50,7 @@ Partial Class frmAutoTyper
         Me.btnStart.Name = "btnStart"
         Me.btnStart.Size = New System.Drawing.Size(206, 46)
         Me.btnStart.TabIndex = 0
-        Me.btnStart.Text = "Start (s)"
+        Me.btnStart.Text = "Start"
         Me.btnStart.UseVisualStyleBackColor = False
         '
         'btnStop
@@ -64,7 +62,7 @@ Partial Class frmAutoTyper
         Me.btnStop.Name = "btnStop"
         Me.btnStop.Size = New System.Drawing.Size(206, 46)
         Me.btnStop.TabIndex = 1
-        Me.btnStop.Text = "Stop (q)"
+        Me.btnStop.Text = "Stop"
         Me.btnStop.UseVisualStyleBackColor = False
         '
         'GroupBox1
@@ -133,30 +131,6 @@ Partial Class frmAutoTyper
         Me.txtSecs.TabIndex = 0
         Me.txtSecs.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
-        'btnHotkey
-        '
-        Me.btnHotkey.BackColor = System.Drawing.Color.Transparent
-        Me.btnHotkey.Enabled = False
-        Me.btnHotkey.Font = New System.Drawing.Font("Malgun Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnHotkey.Location = New System.Drawing.Point(24, 315)
-        Me.btnHotkey.Name = "btnHotkey"
-        Me.btnHotkey.Size = New System.Drawing.Size(206, 46)
-        Me.btnHotkey.TabIndex = 3
-        Me.btnHotkey.Text = "to be added"
-        Me.btnHotkey.UseVisualStyleBackColor = False
-        '
-        'btnRecord
-        '
-        Me.btnRecord.BackColor = System.Drawing.Color.Transparent
-        Me.btnRecord.Enabled = False
-        Me.btnRecord.Font = New System.Drawing.Font("Malgun Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnRecord.Location = New System.Drawing.Point(258, 315)
-        Me.btnRecord.Name = "btnRecord"
-        Me.btnRecord.Size = New System.Drawing.Size(206, 46)
-        Me.btnRecord.TabIndex = 4
-        Me.btnRecord.Text = "to be added"
-        Me.btnRecord.UseVisualStyleBackColor = False
-        '
         'GroupBox2
         '
         Me.GroupBox2.Controls.Add(Me.nudRepeat)
@@ -215,10 +189,8 @@ Partial Class frmAutoTyper
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(490, 405)
+        Me.ClientSize = New System.Drawing.Size(490, 359)
         Me.Controls.Add(Me.GroupBox2)
-        Me.Controls.Add(Me.btnRecord)
-        Me.Controls.Add(Me.btnHotkey)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.btnStop)
         Me.Controls.Add(Me.btnStart)
@@ -243,8 +215,6 @@ Partial Class frmAutoTyper
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents btnHotkey As Button
-    Friend WithEvents btnRecord As Button
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents rbnLoop As RadioButton
     Friend WithEvents rbnRepeat As RadioButton
