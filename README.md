@@ -19,8 +19,6 @@ To use the AutoTyper, simply download the latest release from the [Releases](htt
 1. Launch the AutoTyper application.
 2. Enter the text you want to type in the designated text box.
 3. Set the typing interval (in milliseconds) using the provided input field.
-4. Click the "Start" button to begin typing or use the specified keyboard shortcut (default: "S").
-5. To stop typing, click the "Stop" button or use the specified keyboard shortcut (default: "Q").
 
 ## Inspiration
 
@@ -31,3 +29,7 @@ Special thanks to the developers for inspiring this project.
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+## Updates 
+- Fixing the "start" & "stop" buttons able to be activated with a keypress.
+- Implementation of changing the hotkey
+- Record & Playback of macro.
