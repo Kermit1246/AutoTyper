@@ -37,16 +37,20 @@ Partial Class frmAutoTyper
         Me.Label4 = New System.Windows.Forms.Label()
         Me.rbnLoop = New System.Windows.Forms.RadioButton()
         Me.rbnRepeat = New System.Windows.Forms.RadioButton()
+        Me.txtString = New System.Windows.Forms.TextBox()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         CType(Me.nudRepeat, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox3.SuspendLayout()
         Me.SuspendLayout()
         '
         'btnStart
         '
         Me.btnStart.BackColor = System.Drawing.Color.Transparent
         Me.btnStart.Font = New System.Drawing.Font("Malgun Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnStart.Location = New System.Drawing.Point(24, 263)
+        Me.btnStart.Location = New System.Drawing.Point(24, 331)
         Me.btnStart.Name = "btnStart"
         Me.btnStart.Size = New System.Drawing.Size(206, 46)
         Me.btnStart.TabIndex = 0
@@ -58,7 +62,7 @@ Partial Class frmAutoTyper
         Me.btnStop.BackColor = System.Drawing.Color.Transparent
         Me.btnStop.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.btnStop.Font = New System.Drawing.Font("Malgun Gothic", 9.75!)
-        Me.btnStop.Location = New System.Drawing.Point(258, 263)
+        Me.btnStop.Location = New System.Drawing.Point(258, 331)
         Me.btnStop.Name = "btnStop"
         Me.btnStop.Size = New System.Drawing.Size(206, 46)
         Me.btnStop.TabIndex = 1
@@ -137,7 +141,7 @@ Partial Class frmAutoTyper
         Me.GroupBox2.Controls.Add(Me.Label4)
         Me.GroupBox2.Controls.Add(Me.rbnLoop)
         Me.GroupBox2.Controls.Add(Me.rbnRepeat)
-        Me.GroupBox2.Location = New System.Drawing.Point(24, 120)
+        Me.GroupBox2.Location = New System.Drawing.Point(24, 119)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(440, 113)
         Me.GroupBox2.TabIndex = 5
@@ -184,12 +188,41 @@ Partial Class frmAutoTyper
         Me.rbnRepeat.Text = "Repeat"
         Me.rbnRepeat.UseVisualStyleBackColor = True
         '
+        'txtString
+        '
+        Me.txtString.Location = New System.Drawing.Point(184, 37)
+        Me.txtString.Name = "txtString"
+        Me.txtString.Size = New System.Drawing.Size(200, 20)
+        Me.txtString.TabIndex = 6
+        Me.txtString.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'GroupBox3
+        '
+        Me.GroupBox3.Controls.Add(Me.Label5)
+        Me.GroupBox3.Controls.Add(Me.txtString)
+        Me.GroupBox3.Location = New System.Drawing.Point(24, 238)
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Size = New System.Drawing.Size(440, 85)
+        Me.GroupBox3.TabIndex = 7
+        Me.GroupBox3.TabStop = False
+        Me.GroupBox3.Text = "Typing Phrase"
+        '
+        'Label5
+        '
+        Me.Label5.Location = New System.Drawing.Point(19, 36)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(165, 20)
+        Me.Label5.TabIndex = 7
+        Me.Label5.Text = "Enter the phrase to autoype:"
+        Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'frmAutoTyper
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(490, 359)
+        Me.ClientSize = New System.Drawing.Size(490, 417)
+        Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.btnStop)
@@ -202,6 +235,8 @@ Partial Class frmAutoTyper
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
         CType(Me.nudRepeat, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox3.ResumeLayout(False)
+        Me.GroupBox3.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -220,4 +255,7 @@ Partial Class frmAutoTyper
     Friend WithEvents rbnRepeat As RadioButton
     Friend WithEvents Label4 As Label
     Friend WithEvents nudRepeat As NumericUpDown
+    Friend WithEvents txtString As TextBox
+    Friend WithEvents GroupBox3 As GroupBox
+    Friend WithEvents Label5 As Label
 End Class

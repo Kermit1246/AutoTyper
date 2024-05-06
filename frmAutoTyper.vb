@@ -76,11 +76,11 @@ Public Class frmAutoTyper
     Private Sub timer_Tick(sender As Object, e As EventArgs) Handles timer.Tick
         ' Check for loop rbn selected
         If rbnLoop.Checked Then
-            SendKeys.Send("a")
+            SendKeys.Send(txtString.Text)
             SendKeys.Send("{ENTER}")
             ' Check for rbn loop until selected
         ElseIf rbnRepeat.Checked AndAlso remainingRepeats > 0 Then
-            SendKeys.Send("a")
+            SendKeys.Send(txtString.Text)
             Threading.Thread.Sleep(1000)
             SendKeys.Send("{ENTER}")
             remainingRepeats -= 1
