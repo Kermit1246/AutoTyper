@@ -1,7 +1,6 @@
-# VB.Net AutoTyper
+# VB.Net AutoTyper ![Downloads](https://img.shields.io/github/downloads/Kermit1246/AutoTyper/total)
 
 AutoTyper is a simple Windows application written in Visual Basic .NET that automates typing tasks. 
-![Downloads](https://img.shields.io/github/downloads/Kermit1246/AutoTyper/total)
 
 ## Features
 
