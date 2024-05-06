@@ -25,11 +25,7 @@ To use the AutoTyper, simply download the latest release from the [Releases](htt
 This program was inspired by [OP AUTO CLICKER](https://www.opautoclicker.com/). Idea & Design based off of them.
 Special thanks to the developers for inspiring this project.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## Updates 
 - Fixing the "start" & "stop" buttons able to be activated with a keypress.
-- Implementation of changing the hotkey
+- Implementation of changing hotkey
 - Record & Playback of macro.
