@@ -13,7 +13,7 @@ https://kermit1246.github.io/autotype/
 
 ## Getting Started
 
-To use the AutoTyper, simply download the latest release from the [Releases](https://github.com/Kermit1246/AutoTyper/releases/tag/release) page and run the executable file (`AutoTyper.exe`). No installation is required.
+To use the AutoTyper, simply download the latest release from the [Releases](https://github.com/Kermit1246/AutoTyper/releases/) page and run the executable file (`AutoTyper.exe`). No installation is required.
 
 ## Usage
 
