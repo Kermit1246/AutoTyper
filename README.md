@@ -26,7 +26,8 @@ To use the AutoTyper, simply download the latest release from the [Releases](htt
 This program was inspired by [OP AUTO CLICKER](https://www.opautoclicker.com/). Idea & Design based off of them.
 Special thanks to the developers for inspiring this project.
 
-## Updates 
+## Work in Progress 
 - Fixing the "start" & "stop" buttons able to be activated with a keypress.
 - Implementation of changing hotkey
-- Record & Playback of macro.
+- Dark mode feature
+- Config saving
