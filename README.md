@@ -19,7 +19,7 @@ To use the AutoTyper, simply download the latest release from the [Releases](htt
 
 1. Launch the AutoTyper application.
 2. Enter the text you want to type in the designated text box.
-3. Set the typing interval (in milliseconds) using the provided input field.
+3. Set the typing interval using the provided input fields.
 
 ## Inspiration
 
