@@ -265,7 +265,7 @@ Partial Class frmAutoTyper
         'smiExit
         '
         Me.smiExit.Name = "smiExit"
-        Me.smiExit.Size = New System.Drawing.Size(93, 22)
+        Me.smiExit.Size = New System.Drawing.Size(180, 22)
         Me.smiExit.Text = "Exit"
         '
         'frmAutoTyper
@@ -280,6 +280,7 @@ Partial Class frmAutoTyper
         Me.Controls.Add(Me.btnStop)
         Me.Controls.Add(Me.btnStart)
         Me.Controls.Add(Me.MenuStrip1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "frmAutoTyper"

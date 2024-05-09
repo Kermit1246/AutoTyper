@@ -33,8 +33,7 @@ Public Class frmAutoTyper
         rbnLoop.Checked = True
         btnStop.Enabled = False
         LoadSettings()
-        Me.FormBorderStyle = FormBorderStyle.FixedSingle
-        Me.MaximizeBox = False
+        Me.MaximizeBox = False ' Disable fullscreen
     End Sub
 
     Private Sub frmAutoTyper_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
