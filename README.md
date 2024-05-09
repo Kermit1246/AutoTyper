@@ -1,6 +1,7 @@
-# VB.Net AutoTyper
+# VB.Net AutoTyper                                                                             ![Downloads](https://img.shields.io/github/downloads/Kermit1246/AutoTyper/total)
 
 AutoTyper is a simple Windows application written in Visual Basic .NET that automates typing tasks. 
+https://kermit1246.github.io/autotype/
 
 ## Features
 
@@ -12,24 +13,21 @@ AutoTyper is a simple Windows application written in Visual Basic .NET that auto
 
 ## Getting Started
 
-To use the AutoTyper, simply download the latest release from the [Releases](https://github.com/Kermit1246/AutoTyper/releases/tag/release) page and run the executable file (`AutoTyper.exe`). No installation is required.
+To use the AutoTyper, simply download the latest release from the [Releases](https://github.com/Kermit1246/AutoTyper/releases/) page and run the executable file (`AutoTyper.exe`). No installation is required.
 
 ## Usage
 
 1. Launch the AutoTyper application.
 2. Enter the text you want to type in the designated text box.
-3. Set the typing interval (in milliseconds) using the provided input field.
+3. Set the typing interval using the provided input fields.
 
 ## Inspiration
 
 This program was inspired by [OP AUTO CLICKER](https://www.opautoclicker.com/). Idea & Design based off of them.
 Special thanks to the developers for inspiring this project.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Updates 
+## Work in Progress 
 - Fixing the "start" & "stop" buttons able to be activated with a keypress.
-- Implementation of changing the hotkey
-- Record & Playback of macro.
+- Implementation of changing hotkey
+- Dark mode feature
+- Config saving
