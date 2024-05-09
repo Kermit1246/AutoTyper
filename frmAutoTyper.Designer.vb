@@ -160,6 +160,7 @@ Partial Class frmAutoTyper
         '
         'nudRepeat
         '
+        Me.nudRepeat.AutoSize = True
         Me.nudRepeat.Location = New System.Drawing.Point(81, 35)
         Me.nudRepeat.Name = "nudRepeat"
         Me.nudRepeat.Size = New System.Drawing.Size(51, 20)
@@ -245,13 +246,13 @@ Partial Class frmAutoTyper
         'smiSaveConfig
         '
         Me.smiSaveConfig.Name = "smiSaveConfig"
-        Me.smiSaveConfig.Size = New System.Drawing.Size(180, 22)
+        Me.smiSaveConfig.Size = New System.Drawing.Size(175, 22)
         Me.smiSaveConfig.Text = "Save Configuration"
         '
         'smiOpenConfig
         '
         Me.smiOpenConfig.Name = "smiOpenConfig"
-        Me.smiOpenConfig.Size = New System.Drawing.Size(180, 22)
+        Me.smiOpenConfig.Size = New System.Drawing.Size(175, 22)
         Me.smiOpenConfig.Text = "Open Config"
         '
         'OptionsToolStripMenuItem
@@ -264,7 +265,7 @@ Partial Class frmAutoTyper
         'smiExit
         '
         Me.smiExit.Name = "smiExit"
-        Me.smiExit.Size = New System.Drawing.Size(180, 22)
+        Me.smiExit.Size = New System.Drawing.Size(93, 22)
         Me.smiExit.Text = "Exit"
         '
         'frmAutoTyper
@@ -289,6 +290,7 @@ Partial Class frmAutoTyper
         CType(Me.nudSecs, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.nudMilli, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox2.PerformLayout()
         CType(Me.nudRepeat, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox3.ResumeLayout(False)
         Me.GroupBox3.PerformLayout()

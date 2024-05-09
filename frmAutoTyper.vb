@@ -1,6 +1,9 @@
-﻿Imports Microsoft.VisualBasic.Devices
+﻿#Region "Imports"
+Imports Microsoft.VisualBasic.Devices
 Imports System.IO
 Imports Newtonsoft.Json
+#End Region
+#Region "Form Settings"
 Public Class frmAutoTyper
     Dim WithEvents timer As New Timer()
     Dim repeatCount As Integer = 0
@@ -30,11 +33,18 @@ Public Class frmAutoTyper
         rbnLoop.Checked = True
         btnStop.Enabled = False
         LoadSettings()
+        Me.FormBorderStyle = FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
     End Sub
 
     Private Sub frmAutoTyper_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
         ' Save on close
         SaveSettings()
+    End Sub
+#End Region
+#Region "SubMenuItems"
+    Private Sub smiExit_Click(sender As Object, e As EventArgs) Handles smiExit.Click
+        End
     End Sub
 
     Private Sub smiOpenConfig_Click(sender As Object, e As EventArgs) Handles smiOpenConfig.Click
@@ -94,8 +104,8 @@ Public Class frmAutoTyper
 
         File.WriteAllText(configFile, json)
     End Sub
-
-
+#End Region
+#Region "StopStart"
     Private Sub btnStart_Click(sender As Object, e As EventArgs) Handles btnStart.Click
         StartTyping()
         btnStart.Enabled = False
@@ -116,7 +126,8 @@ Public Class frmAutoTyper
             e.Handled = True
         End If
     End Sub
-
+#End Region
+#Region "Typing"
     Private Sub StartTyping()
         Dim interval As Integer = CalculateInterval()
         ' Console validation, developer tool - Tests for valid response (1)
@@ -175,6 +186,8 @@ Public Class frmAutoTyper
             StopTyping()
         End If
     End Sub
+#End Region
+#Region "Autosave Settings"
     Private Sub SaveSettings()
         ' Structure
         _settings.IntervalMinutes = nudMins.Text
@@ -208,8 +221,5 @@ Public Class frmAutoTyper
             rbnRepeat.Checked = _settings.RepeatEnabled
         End If
     End Sub
-
-    Private Sub smiExit_Click(sender As Object, e As EventArgs) Handles smiExit.Click
-        End
-    End Sub
+#End Region
 End Class
