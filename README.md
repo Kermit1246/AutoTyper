@@ -10,6 +10,7 @@ https://kermit1246.github.io/autotype/
 - Option to repeat typing for a specified number of times or indefinitely.
 - Start/stop typing using buttons or keyboard shortcuts.
 - Simple and easy-to-use interface.
+- Configuration file save, automatically & manual saving.
 
 ## Getting Started
 
@@ -29,5 +30,4 @@ Special thanks to the developers for inspiring this project.
 ## Work in Progress 
 - Fixing the "start" & "stop" buttons able to be activated with a keypress.
 - Implementation of changing hotkey
-- Dark mode feature
-- Config saving
+
