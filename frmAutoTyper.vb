@@ -110,6 +110,7 @@ Public Class frmAutoTyper
         btnStart.Enabled = False
         btnStop.Enabled = True
         SaveSettings() ' Save on start
+        txtString.Enabled = False
     End Sub
 
     Private Sub btnStop_Click(sender As Object, e As EventArgs) Handles btnStop.Click
@@ -117,6 +118,7 @@ Public Class frmAutoTyper
         btnStop.Enabled = False
         btnStart.Enabled = True
         SaveSettings() ' Save on stop
+        txtString.Enabled = True
     End Sub
 
     Private Sub NumberChecker(sender As Object, e As KeyPressEventArgs)
